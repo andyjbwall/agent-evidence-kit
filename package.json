@@ -1,0 +1,29 @@
+{
+  "name": "agent-evidence-kit",
+  "version": "0.1.0",
+  "description": "TypeScript schemas and validation for provenance-backed AI research claims.",
+  "keywords": ["ai", "research", "provenance", "evidence", "validation"],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "agent-evidence-kit": "./dist/cli.js"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "validate": "node ./dist/cli.js"
+  },
+  "dependencies": { "zod": "^3.24.2" },
+  "devDependencies": { "@types/node": "^22.13.4", "typescript": "^5.7.3", "vitest": "^3.0.7" }
+}
