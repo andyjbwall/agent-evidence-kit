@@ -2,7 +2,7 @@
 
 A small TypeScript library for recording the provenance behind AI-generated research claims. It validates that claims have sources and that evidence snippets link to those sources, so research systems do not silently accept unsupported output.
 
-Developed from patterns used in Story Scotland, an AI-assisted historical research and travel project.
+Developed from provenance and verification patterns used in Story Scotland, an AI-assisted historical research and travel project.
 
 ## Install
 
